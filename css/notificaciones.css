@@ -1,0 +1,42 @@
+/* body{
+    margin: 0;
+    padding: 0;
+} */
+.todo{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.closebt{
+    position: fixed; /* esto es para tener una posición fija */
+    top: 20px; 
+    right: 20px; 
+}
+.content{
+    display: grid;
+    grid-template-areas:"reubicacion texto hora";
+    grid-gap: 50px;
+}
+.reubicacion{
+    grid-area: reubicacion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+.texto{
+    grid-area: texto;
+    align-items: center;
+}
+.hora{
+    display: flex;
+    justify-content: center;
+    grid-area: hora;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.content:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+
