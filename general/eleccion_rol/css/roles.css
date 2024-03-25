@@ -23,7 +23,6 @@
     display: flex;
     justify-content:center;
     margin-top: 10%;
-    
 }
 .section1 {
     display: flex;
@@ -48,12 +47,10 @@
 }
 .btn1 {
     border: none;
-    
     padding: 16px 30px;
     color: #000;
     border-radius: 6px;
     transition: 0.2s;
-    
 }
 .btn1:hover{
     box-shadow: 0 0 0 4px #fff, 0 0 0 8px rgb(255, 94, 0);
