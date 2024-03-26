@@ -59,16 +59,24 @@
     background-size: cover;
 }
 .article-section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
     width: 80%;
+    height: 70%;
     color: white;
-    background-color: rga;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    font-size: 1.5rem;
 }
 /* Estilos seccion de beneficios */
 .benefits-section {
     flex-direction: column;
     align-items: center;
-    height: 80vh;
-    background-color: #051118;
+    padding: 3rem 0 4rem 0;
+    height: auto;
+    background-color: #00111c;
     color: white;
 }
 .benefits-section h1 {
@@ -76,37 +84,79 @@
 }
 .benefits-container {
     display: flex;
+    justify-content: center;
     width: 90%;
-    height: 70%;
+    height: 20rem;
     gap: 24px;
 }
 .benefits {
-    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    width: 20%;
     border-radius: 24px;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgb(92, 92, 92);
 }
+.benefits h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
 .img-benefit-container {
-    width: 60%;
+    width: 80%;
 }
 .img-benefit-container img {
     width: 100%;
 }
 /* Estilos de la seccion de Call to action */
 .cta-section{
-    flex-direction: column;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 4rem;
     height: 100vh;
     background-image: url('https://www.eafit.edu.co/sites/catalogo/PublishingImages/Noticias/2019/futbolista-vale-lo-que-vale.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.cta-section button {
+.article-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    width: 45%;
+    height: 80%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 17, 28, 0.5);
+    border-radius: 8px;
 
 }
+.article-cta button {
+    margin: 0.3rem 0;
+    padding: 1rem 1.5rem;
+    width: 50%;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+    transition: 0.2s;
+    font-size: 1.3rem;
+    color: white;
+    background-color: rgb(255, 94, 0);
+}
+
 /* Estilos de la seccion sobre nosotros */
 .about-us-section {
     flex-direction: column;
     align-items: center;
-    height: 60vh;
-    background-color: rgb(5, 8, 58);
+    padding: 3rem;
+    height: 80vh;
+    background-color: rgba(0, 17, 28, 1);
     color: white;
     text-align: center;
 }
@@ -115,25 +165,29 @@
 }
 .mis-vis-container {
     display: flex;
-    align-items: start;
+    align-items: center;
+    gap: 2rem;
     width: 80%;
 }
 .mis-vis-article {
     display: flex;
-    align-items: start;
     gap: 1rem;
+    padding: 2rem;
     width: 50%;
     height: 100%;
-}
-.img-mv-container {
-    width: 0%;
+    background-color: rgba(0, 26, 44, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
 }
 .m-v-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     width: 80%;
 }
 .img-mv-container {
     align-self: center;
-    width: 20%;
+    width: 40%;
 }
 .img-mv-container img {
     width: 100%;
@@ -143,7 +197,8 @@
     flex-direction: column;
     align-items: center;
     height: auto;padding: 2rem;
-    background-color: #051118;
+    color: white;
+    background: linear-gradient(180deg, rgba(0,17,28,1) 0%, rgba(0,41,69,1) 100%);;
 }
 .team-section h1 {
     margin: 3rem;
@@ -153,6 +208,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 2rem;
     width: 80%;
     justify-content: center;
 }
@@ -160,12 +216,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     padding: 1rem;
     height: 15rem;
     width: 12rem;
+    font-size: 0.8rem;
     color: white;
     border-radius: 8px;
-    background-color: #152935;
+    background-color: rgba(0, 17, 28, 0.5);
+    /* border: 1px solid rgb(48, 64, 84); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 /* Estilos del footer */
 .footer {
