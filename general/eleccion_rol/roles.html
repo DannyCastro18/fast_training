@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/roles.css">
+    <title>rol</title>
+</head>
+<body>
+    <section class="section-role">
+        <a href="#" id="backButton">
+            <img class="back" src="./img/Back.png" alt="Volver" />
+        </a>
+        <h1 >Elige tu rol</h1>
+        <section class="contenedor-btn">
+            <article class="section1">
+                <figure class="img-contenedor">
+                    <img class="img1" src="./img/entrenador.png" alt="picture entrenador">
+                </figure>
+                    <br>
+                <h2 class="name">Entrenador</h2>
+            </article>
+            <article class="section1">
+                <img class="img1" src="./img/jugador.png" alt="picture jugador">
+                <br>
+                <h2 class="name">Jugador</h2>
+            </article>
+        </section>
+        <button class="btn1">Continuar</button>
+    </section>
+    <script>
+        document.getElementById("backButton").addEventListener("click", function (event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+            history.back(); // Navega hacia atrás en la historia del navegador
+        });
+    </script>
+
+</body>
+</html>
