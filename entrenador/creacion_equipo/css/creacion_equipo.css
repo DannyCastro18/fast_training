@@ -9,6 +9,8 @@
     height: 38rem;
     margin: auto;
     padding: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 .header-form {
     display: flex;
