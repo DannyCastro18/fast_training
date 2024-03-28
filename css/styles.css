@@ -1,0 +1,543 @@
+
+/* Estilos generales */
+
+* {
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    color: #00b4d8;
+    text-decoration: none;
+}
+.section {
+    display: flex;
+}
+/* Estilos del header */
+.header {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    position: fixed;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0));
+}
+.nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.logo-container {
+    height: 100%;
+    width: 9rem;
+    margin: auto 30px;
+}
+.logo-container img {
+    height: 100%;
+    width: 100%;
+}
+.nav ul li {
+    margin: auto 20px;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+.input-inicio-sesion, .input-registro, .input-registro-done {
+    opacity: 0;
+}
+#botonLogin, #botonRegistro {
+    margin: 0.3rem 0;
+    padding: 1rem 1.5rem;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+}
+/* Estilos del Login  */
+.inicio-sesion-container {
+    display: none;
+}
+#mostrarLoginForm:checked ~ #inicioSesionForm{
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    left: calc(50% - 30vh);
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 30vw;
+    height: 38rem;
+    border-radius: 8px;
+    background-color: white;
+    
+    .back-link {
+        margin: 1rem 0 0 1rem;
+        color: black;
+        align-self: flex-start;
+    }
+    .back-link i {
+    font-size: 2rem;
+    } 
+    .form-container {
+    width: 70%;
+    }
+    .form-inicio-sesion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .titulo{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem;
+    }
+    .input{
+    display: inline-block;
+    padding-left: 1rem;
+    height: 2rem;
+    width: 100%;
+    font-size: 0.8rem;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 8px;
+    }
+    .forget-password {
+    align-self: flex-end;
+    font-size: 0.7rem;
+    }
+    .inicio-sesion-button{
+    margin: 2rem 0 0 0;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.2s;
+    background-color: #00b4d8;
+    }
+    .inicio-sesion-button a{
+        color: white;
+    }
+    .registrarse-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    }
+    .login-platforms {
+    margin-top: 3rem;
+    border-top: 1px solid black;
+    }
+    .login-btn {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0 0;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 8px;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 0.8rem;
+    }
+    .login-btn i {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    }
+}
+
+/* Estilos del Registro */
+.registrarse-container {
+    display: none;
+}
+#mostrarRegistroForm:checked ~ #registroForm {
+    position: absolute;
+    top: 2rem;
+    left: calc(50% - 30vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 30vw;
+    height: 38rem;
+    border-radius: 8px;
+    background-color: white;
+    .back-link {
+    margin: 1rem 0 0 1rem;
+    color: black;
+    align-self: flex-start;
+    }
+    .back-link i {
+    font-size: 2rem;
+    } 
+    .form-container {
+    width: 70%;
+    }
+    .form-registrarse {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
+    }
+    .titulo{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem;
+    }
+    .input{
+    display: inline-block;
+    padding-left: 1rem;
+    height: 2rem;
+    width: 100%;
+    font-size: 0.8rem;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 8px;
+    text-align: start;
+    }
+    .registrarse-button{
+    margin: 1rem 0 0 0;
+    padding: 0.5rem 1.5rem;
+    height: 2rem;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.2s;
+    background-color: #00b4d8;
+    text-align: center;
+    }
+    .login-section {
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    }
+    .signup-platforms {
+    border-top: 1px solid black;
+    }
+    .signup-btn {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0 0;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 8px;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 0.8rem;
+    }
+    .signup-btn i {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    }
+}
+
+/* Estilos del eleccion de rol */ 
+
+.section-role {
+    display: none;
+}
+#mostraEleccionRol:checked ~ .section-role {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 15vw);
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 38rem;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    background-color: white ;
+    a {
+        color: #000;
+    }
+    .back{
+        align-self: flex-start;
+        font-size: 2rem;
+        color: black;
+        margin: 2rem;
+    }
+    .contenedor-btn {
+        display: flex;
+        justify-content:center;
+    }
+    .section-roles-img {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+        width: 160px;
+        justify-content: space-between;
+        flex-direction: column;
+        border-radius: 8px;
+        background-color: rgb(224, 225, 225);
+        transition: 0.2s;
+    }
+    .img-contenedor {
+        width: 110px;
+    }
+    .img1 {
+        width: 110px;
+    }
+    .name{
+        text-align: center;
+    }
+    .btn1 {
+        margin-top: 2rem;
+        border: none;
+        padding: 16px 30px;
+        color: #000;
+        border-radius: 6px;
+        transition: 0.2s;
+    }
+    .btn1:hover{
+        box-shadow: 0 0 0 4px #fff, 0 0 0 8px rgb(255, 94, 0);
+    }
+    .section-roles-img:hover {
+        background-color: rgb(255, 94, 0);
+        box-shadow: 0 0 0 4px #fff, 0 0 0 8px rgb(255, 94, 0);
+    }
+    .move {
+        text-align: center;
+    }
+    .btn1:hover {
+        background-color: rgb(255, 94, 0);
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Estilos seccion principal */
+
+.section1 {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.article-section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    width: 80%;
+    height: 70%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
+/* Estilos seccion de beneficios */
+.benefits-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 4rem 0;
+    height: auto;
+    background-color: #00111c;
+    color: white;
+}
+.benefits-section h1 {
+    margin: 2rem;
+}
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 20rem;
+    gap: 24px;
+}
+.benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    width: 20%;
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(92, 92, 92);
+}
+.benefits h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.img-benefit-container {
+    width: 80%;
+}
+.img-benefit-container img {
+    width: 100%;
+}
+/* Estilos de la seccion de Call to action */
+.cta-section{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 4rem;
+    height: 100vh;
+    background-image: url('https://www.eafit.edu.co/sites/catalogo/PublishingImages/Noticias/2019/futbolista-vale-lo-que-vale.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.article-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    width: 45%;
+    height: 80%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 17, 28, 0.5);
+    border-radius: 8px;
+
+}
+.article-cta button {
+    margin: 0.3rem 0;
+    padding: 1rem 1.5rem;
+    width: 50%;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+    transition: 0.2s;
+    font-size: 1.3rem;
+    color: white;
+    background-color: rgb(255, 94, 0);
+}
+
+/* Estilos de la seccion sobre nosotros */
+.about-us-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    height: 80vh;
+    background-color: rgba(0, 17, 28, 1);
+    color: white;
+    text-align: center;
+}
+.about-us-section h1 {
+    margin: 3rem;
+}
+.mis-vis-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+}
+.mis-vis-article {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 26, 44, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+.m-v-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+}
+.img-mv-container {
+    align-self: center;
+    width: 40%;
+}
+.img-mv-container img {
+    width: 100%;
+}
+/* Estilos de la seccion equipo */
+.team-section{
+    flex-direction: column;
+    align-items: center;
+    height: auto;padding: 2rem;
+    color: white;
+    background: linear-gradient(180deg, rgba(0,17,28,1) 0%, rgba(0,41,69,1) 100%);;
+}
+.team-section h1 {
+    margin: 3rem;
+    text-align: center;
+}
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    width: 80%;
+    justify-content: center;
+}
+.member-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    height: 15rem;
+    width: 12rem;
+    font-size: 0.8rem;
+    color: white;
+    border-radius: 8px;
+    background-color: rgba(0, 17, 28, 0.5);
+    /* border: 1px solid rgb(48, 64, 84); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+/* Estilos del footer */
+.footer {
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-items-container {
+}
+.social-media-section p {
+    font-size: 12px;
+    text-align: center;
+    color: grey;
+}
+.social-items-container {
+    display: flex;
+    gap: 10px;
+}
+.footer-items {
+    list-style: none;
+}
+.footer-items a {
+    text-decoration: none;
+    color: black;
+}
+.icons-footer {
+    font-size: 35px;
+}
