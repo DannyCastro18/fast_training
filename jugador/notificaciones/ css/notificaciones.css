@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+* {
+  font-family: "Readex Pro", sans-serif;
+	font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.section{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 40%;
+    margin: 0 auto; 
+    background-color: white; 
+    padding: 20px; 
+}
+.titulo{
+    display: grid;
+    grid-template-areas: "card1 card2 card3";
+    grid-gap: 50px;
+    margin: 10px;
+}
+.content{
+    display: grid;
+    grid-template-areas: "card1 card2 card3";
+    grid-gap: 50px;
+}
+
+.card1{
+    grid-area: card1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+
+.card2{
+    grid-area: card2;
+    align-items: center;
+}
+
+
+.card3{
+    display: flex;
+    justify-content: center;
+    grid-area: card3;
+    align-items: center;
+    margin: 10px;
+}
+
+.content:hover{
+    background-color: #c5c5c5;
+    cursor: pointer;
+}
