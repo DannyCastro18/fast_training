@@ -1,0 +1,48 @@
+body {
+   font-family: Arial, sans-serif;
+}
+
+.pagina {
+   width: 500px;
+   margin: auto;
+   border: 1px solid #ccc;
+   padding: 40px;
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+   text-align: center;
+   margin-top: 100px;
+}
+.header {
+   display: flex;
+   justify-content: space-between;
+}
+.icono {
+   cursor: pointer;
+}
+   h1 {
+      color: #333;
+      margin-bottom: 20px;
+}
+
+h2 {
+   color: #333;
+   margin: 0px 100px 80px;
+}
+.texto1{
+margin: 0px 100px 50px;
+text-align: center; 
+}
+
+/* Estilos de Input */
+input[type=email], input[type=text] {
+   width: calc(70% - 20px);
+   padding: 10px 10px ;
+   margin-bottom: 20px;
+}
+
+/* Estilos de Botón */
+button {
+   background-color: #ff5733;
+   color: white;
+   border:none;
+   padding:10px 136px; 
+}
