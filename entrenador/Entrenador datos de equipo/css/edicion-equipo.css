@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(204, 202, 202);
+}
+svg{
+    
+    
+}
+main{
+    display: flex;
+    color: rgb(19, 18, 18);
+}
+
+article{
+    cursor: pointer;
+    background-color: white;
+    width: 319px;
+    height: 862px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.logofut{
+    height: 30%;
+}
+
+.equipo{
+    background-color: white;
+    width: 876px;
+    height: 862px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+}
