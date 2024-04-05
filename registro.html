@@ -11,42 +11,100 @@
 <body>
     <section class="container-signup">
         <section class="r-img-background"></section>
-        <section id="registrarse" class="registrarse-container">
-            <a class="back-link" href="../../index.html">
-                <i class="fa-solid fa-angle-left"></i>
-            </a>
-            <section class="form-container">
-                <form class="form-registrarse">
-                    <h1 class="titulo">Registrarse</h1>
-                    <input class="input" type="text" placeholder="Nombre">
-                    <br>
-                    <input class="input" type="email" placeholder="user@gmail.com">
-                    <br>
-                    <input class="input" type="password" placeholder="Escribe tu contraseña">
-                    <br>
-                    <input id="pass" class="input" type="password" placeholder="Confirma tu contraseña">
-                    <a href="./roles.html">
-                        <button class="registrarse-button">Registrarse</button>
-                    </a>
-                </form>
-                <section class="registrarse-section">
-                    <p>¿Ya tienes una cuenta?</p>
-                    <a href="#">Iniciar sesión</a>
-                </section>
-        
-                <section class="signup-platforms">
-                    <a href="#" class="signup-btn google">
-                        <i class="fa-brands fa-google"></i>
-                    Iniciar sesión con Google
-                    </a>
-                    <a href="#" class="signup-btn apple">
-                        <i class="fa-brands fa-apple"></i>
-                    Iniciar sesión con Apple
-                    </a>
-                    <a href="#" class="signup-btn microsoft">
-                        <i class="fa-brands fa-microsoft"></i>
-                    Iniciar sesión con Microsoft
-                    </a>
+        <section class="signup-section2">
+            <section id="registrarse" class="registrarse-container">
+                <a class="back-link" href="./index.html">
+                    <i class="fa-solid fa-angle-left"></i>
+                </a>
+                <section class="form-container">
+                    <form name="" id="" class="form-registrarse">
+                        <h1 class="titulo">Registrarse</h1>
+                        <input class="input" type="text" placeholder="Nombre">
+                        <br>
+                        <input class="input" type="email" placeholder="user@gmail.com">
+                        <br>
+                        <input class="input" type="password" placeholder="Escribe tu contraseña">
+                        <br>
+                        <input id="pass" class="input" type="password" placeholder="Confirma tu contraseña">
+
+                        <!-- Input para mostrar la eleccion de roles  -->
+                        <input class="input-eleccion-rol" type="checkbox" id="mostrarEleccionRol">
+                        <label for="mostrarEleccionRol" id="eleccionRol" class="registrarse-button">Registrarse</label>
+                        <!-- Contenido de la eleccion de rol -->
+                        <section class="section-roles">
+                            
+                            <a class="back-link re-back-link" href="./registro.html">
+                                <i class="fa-solid fa-angle-left"></i> <!-- Icono de "atrás" -->
+                            </a>
+                            <h1 >Elige tu rol</h1>
+                            <section class="contenedor-btn">
+                                <article class="section1">
+                                    <!-- Input para mostrar la section de certificado -->
+                                    <input class="input-certificado" type="checkbox" id="mostrarSectionCertificado">
+                                    <label for="mostrarSectionCertificado" id="certificado" class="entrenador-certificado-btn">
+                                    
+                                        <figure class="img-contenedor">
+                                            <img class="img1" src="./img/entrenador.png" alt="picture entrenador">
+                                        </figure>
+                                        <h2 class="name">Entrenador</h2>
+                                    </label>
+
+                                    <!-- Contenido de la seccion de certificado -->
+                                    <section class="general">
+                                        <a class="back-link atras" href="./registro.html">
+                                            <i class="fa-solid fa-angle-left"></i>
+                                        </a>
+                                        <section class="card">
+                                            <section class="text1">
+                                                <h1>Debemos asegurarnos</h1>
+                                                <p>Para verificar que eres entrenador por favor adjunta el documento que lo certifique</p>
+                                            </section>
+                                            <form name="certificado-up" class="form-input" id="subirCertificadoE">
+                                                <section class="file-input">
+                                                    <input class="input-file" type="file" id="file">
+                                                    <label class="file-label"    for="file">
+                                                    <img class="img" src="./img/clip-de-papel.png" width="150px">
+                                                    </label>
+                                                    <label for="file">Seleccionar archivo</label>
+                                                </section>
+                                            </form>
+                                            <a href="./home_entrenador.html" class="boton">Continuar</a>    
+                                        </section>
+                                    </section>
+                                </article>
+
+                                <article class="section1">
+                                    <a href="./home-jugador.html">
+                                        <figure class="img-contenedor">
+                                            <img class="img1" src="./img/jugador.png" alt="picture jugador">
+                                        </figure>
+                                        <h2 class="name">Jugador</h2>
+                                    </a>
+                                </article>
+                            </section>
+                            <a href="./home_entrenador.html" class="btn1">Continuar</a>
+                        </section>
+
+                    </form>
+                    <section class="iniciar-section">
+                        <p>¿Ya tienes una cuenta?</p>
+                        <a href="./inicio_sesion.html">Iniciar sesión</a>
+                    </section>
+            
+                    <section class="signup-platforms">
+                        <a href="#" class="signup-btn google">
+                            <i class="fa-brands fa-google"></i>
+                        Iniciar sesión con Google
+                        </a>
+                        <a href="#" class="signup-btn apple">
+                            <i class="fa-brands fa-apple"></i>
+                        Iniciar sesión con Apple
+                        </a>
+                        <a href="#" class="signup-btn microsoft">
+                            <i class="fa-brands fa-microsoft"></i>
+                        Iniciar sesión con Microsoft
+                        </a>
+                    </section>
                 </section>
             </section>
         </section>

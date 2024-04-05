@@ -5,8 +5,22 @@
 	font-style: normal;
 }
 a{
-  color: rgb(252, 109, 7);
+  color: #00b4d8;
   text-decoration: none;
+}
+.invisible {
+  display: none;
+}
+.btn {
+  margin: 2rem 0 0 0;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.2s;
+  background-color: #00b4d8;
 }
 .container-login {
   display: flex;
@@ -34,31 +48,183 @@ a{
   width: 70%;
   border-radius: 8px;
   background-color: white;
-  
-  .back-link {
-      margin: 1rem 0 0 1rem;
-      color: black;
-      align-self: flex-start;
-  }
-  .back-link i {
+}
+.back-link {
+    margin: 1rem 0 0 1rem;
+    color: black;
+    align-self: flex-start;
+}
+.back-link i {
   font-size: 2rem;
-  } 
-  .form-container {
+} 
+.form-container {
   width: 70%;
-  }
-  .form-inicio-sesion {
-  width: 100%;
+}
+.form-inicio-sesion {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.titulo{
+text-align: center;
+font-size: 1.5rem;
+font-weight: 400;
+margin: 1rem;
+}
+.input{
+    display: inline-block;
+    padding-left: 1rem;
+    height: 2rem;
+    width: 100%;
+    font-size: 0.8rem;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 8px;
+}
+.input-recover-pass {
+    opacity: 0;
+}
+.forget-password {
+    align-self: flex-end;
+    font-size: 0.7rem;
+    color: #00b4d8;
+}
+.recover-pass1 {
+  display: none;
+}
+/* Estilos Recuperar contraseña1  */
+.input-recover-pass:checked ~ .recover-pass1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
-  .titulo{
+  position: absolute;
+  top: calc(40% - 25vh);
+  left: calc(50% - 250px);
+  width: 40vw;
+  height: 55vh;
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  .back-link {
+    margin: 1rem;
+    text-align: start;
+    cursor: pointer;
   }
-  .input{
+  .r-p-back-link {
+    margin: 2rem 0 0 2rem;
+  }
+  .form-recover-pass1 {
+    width: 70%;
+  }
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .texto1{
+    margin-top: 2rem;
+    font-weight: 300;
+    text-align: center; 
+  }
+  /* Estilos de Input */
+  .correo {
+    display: inline-block;
+    padding-left: 1rem;
+    height: 2rem;
+    width: 100%;
+    font-size: 0.8rem;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 8px;
+  }
+  /* Estilos de Botón */
+  button {
+    margin: 2rem 0 0 0;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.2s;
+    background-color: #00b4d8;
+  }
+  .recover-pass2 {
+    display: none;
+    
+  }
+
+  /* Estilos seccion escribir codigo */
+  .input-recover-pass2:checked ~.recover-pass2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: calc(40% - 25vh);
+    left: calc(50% - 20vw);
+    width: 40vw;
+    height: 55vh;
+    max-height: auto
+    ;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+  }
+  .back-link {
+      margin: 1rem;
+      text-align: start;
+      cursor: pointer;
+  }
+  .r-p-back-link {
+      margin: 2rem 0 0 2rem;
+  }
+  i {
+      font-size: 1.5rem;
+  }
+  .form-recover-pass1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 70%;
+  
+  }
+  h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-align: center;
+  }
+  .texto1{
+      margin-top: 1.5rem;
+      font-weight: 300;
+      text-align: center; 
+  }
+  .alert-container {
+      display: flex;
+      align-items: center;
+      padding: 0 0.5rem;
+      margin: 1rem 0 0.3rem 0;
+      gap: 0.2rem;
+      height: 1.8rem;
+      width: auto;
+      background-color: #fff6dd;
+      border-radius: 8px;
+      border: 1px solid rgb(226, 171, 18);
+  }
+  .fa-triangle-exclamation {
+      font-size: 1rem;
+      color: rgb(250, 191, 28);
+  }
+  .alert-text {
+    margin-left: 0.3rem;
+      text-align: left;
+      font-size: 0.6rem;
+      color: rgb(226, 171, 18);
+  }
+  /* Estilos de Input */
+  .codigo {
       display: inline-block;
       padding-left: 1rem;
       height: 2rem;
@@ -68,52 +234,65 @@ a{
       border: none;
       border-radius: 8px;
   }
-  .input-recover-pass {
-      opacity: 0;
+  /* Estilos de Botón */
+  .continuar {
+      margin: 0;
+      padding: 0.5rem 1.5rem;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.2s;
+      background-color: #00b4d8;
   }
-  .forget-password {
-      align-self: flex-end;
-      font-size: 0.7rem;
-      color: #00b4d8;
+  .continuar a {
+    color: white;
   }
-  .inicio-sesion-button{
-  margin: 2rem 0 0 0;
-  padding: 0.5rem 1.5rem;
-  width: 100%;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: 0.2s;
-  background-color: #00b4d8;
+  .reenviar-codigo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
   }
-  .inicio-sesion-button a{
-      color: white;
-  }
-  .registrarse-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 1rem 0;
-  font-size: 0.8rem;
-  }
-  .login-platforms {
-  margin-top: 3rem;
-  border-top: 1px solid black;
-  }
-  .login-btn {
-  display: flex;
-  align-items: center;
-  margin: 1rem 0 0 0;
-  color: rgb(0, 0, 0);
-  border: 1px solid black;
-  border-radius: 8px;
-  font-weight: 300;
-  text-decoration: none;
-  font-size: 0.8rem;
-  }
-  .login-btn i {
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  }
+}
+/* Fin estilos recuperar contraseña */
+.inicio-sesion-button{
+margin: 2rem 0 0 0;
+padding: 0.5rem 1.5rem;
+width: 100%;
+color: white;
+border: none;
+border-radius: 8px;
+font-weight: 600;
+transition: 0.2s;
+background-color: #00b4d8;
+}
+.inicio-sesion-button a{
+    color: white;
+}
+.registrarse-section {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 1rem 0;
+font-size: 0.8rem;
+}
+.login-platforms {
+margin-top: 1rem;
+border-top: 1px solid black;
+}
+.login-btn {
+display: flex;
+align-items: center;
+margin: 1rem 0 0 0;
+color: rgb(0, 0, 0);
+border: 1px solid black;
+border-radius: 8px;
+font-weight: 300;
+text-decoration: none;
+font-size: 0.8rem;
+}
+.login-btn i {
+font-size: 1.5rem;
+padding: 0.5rem;
 }

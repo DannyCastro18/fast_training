@@ -21,12 +21,17 @@ a{
   background-size: cover;
   background-position: 50%;
 }
+.signup-section2 {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
 .registrarse-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  width: 50vw;
+  width: 70%;
   height: auto;
   background-color: white;
 }
@@ -51,7 +56,7 @@ a{
   text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 1rem 0;
 }
 .input{
   display: inline-block;
@@ -74,11 +79,163 @@ a{
   transition: 0.2s;
   background-color: #00b4d8;
 }
-.registrarse-section {
+
+/* Estilos de la seccion de eleccion de rol */
+.input-eleccion-rol {
+  opacity: 0;
+}
+.section-roles {
+  display: none;
+}
+.input-eleccion-rol:checked ~ .section-roles {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 232px);
+  display: flex;
+  flex-direction: column;
+  width: 464px;
+  height: 90vh;
+  text-align: center;
+  margin: 5vh;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+
+.re-back-link {
+  margin: 2rem 0 0 2rem;
+}
+.contenedor-btn {
+  display: flex;
+  justify-content:center;
+}
+.section1 {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 20px;
+  width: 160px;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: rgb(224, 225, 225);
+  transition: 0.2s;
+}
+.img-contenedor {
+  width: 110px;
+}
+.img1 {
+  width: 110px;
+}
+.name{
+  text-align: center;
+  margin: 0;
+}
+.btn1 {
+  margin-top: 2rem;
+  border: none;
+  padding: 16px 30px;
+  color: #000;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+.btn1:hover{
+  box-shadow: 0 0 0 4px #fff, 0 0 0 8px rgb(255, 94, 0);
+}
+.section1:hover {
+  background-color: rgb(255, 94, 0);
+  box-shadow: 0 0 0 4px #fff, 0 0 0 8px rgb(255, 94, 0);
+}
+
+/* Estilos de la seccion de certificado */
+.general {
+  display: none;
+}
+.input-certificado {
+  display: none;
+}
+.input-certificado:checked ~ .general {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 232px);
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  background-color: white;
+  height: 90vh;
+  width: 464px;
+  margin: 0 auto; 
+  padding: 20px;
+  border-radius: 8px;
+  .card{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 50px;
+  }
+  .text1 {
+      text-align: center; 
+  }
+
+  .atras{
+    text-align: left;
+      margin-top: 0px;
+      margin-left: 0px;
+      height: 20px;
+  }
+  .boton{
+      width: 300px;
+      height: 30px;
+      background-color: rgb(255, 119, 0);
+      border: 1px solid rgb(255, 119, 0);
+      border-radius: 5px;
+      color: white;
+      margin: auto;
+      margin-bottom: 20px;
+  }
+  .form-input{
+      text-align: center;
+      height: 10rem;
+      width: 90%;
+      border: 4px dashed black;
+}
+  .file-input {
+      position: relative;
+      display: inline-block;
+  }
+  .file-input input[type="file"] {
+      position: absolute;
+      top:0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+  }
+  .file-input label {
+      display: block;
+  }
+  .img{
+  }
+  .file-input img {
+      max-width: 50%;
+      max-height: 50%;
+  }
+}
+/* Fin de los estilos de la seccion de estilos */
+
+.btn1:hover {
+  background-color: rgb(255, 94, 0);
+  
+}
+h1 {
+  font-size: 2rem;
+}
+}
+
+.iniciar-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  margin: 1rem 0;
 }
 .signup-platforms {
   border-top: 1px solid black;

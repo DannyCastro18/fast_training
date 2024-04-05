@@ -32,28 +32,6 @@ body {
 .logo a img {
 	width: 180px;
 }
-.barra-busqueda {
-	display: flex;
-	width: 30vw;
-	height: 35px;
-}
-.busqueda-lupita {
-	height: 100%;
-	width: 38px;
-	background-color: white;
-	border: none;
-	padding: 5px 5px;
-}
-.busqueda-lupita i {
-	font-size: 18px;
-}
-.busqueda{
-	width: 90%;
-	height: 100%;
-	padding: 10px;
-	border: none;
-	font-size: 18px;
-}
 /*Fin de Estilos para el encabezado*/
 
 /*Menù lateral*/

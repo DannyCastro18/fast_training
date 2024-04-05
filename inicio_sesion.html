@@ -29,8 +29,44 @@
                         <!-- Input para mostrar seccion de recuperacion de contraseña -->
                         <input class="input-recover-pass" type="checkbox" id="mostrarRecoverPass1">
                         <label for="mostrarRecoverPass1" id="linkRecoverPass" class="forget-password">¿Olvidaste tu contraseña?</label>
-        
-                        <a href="#"  class="forget-password">¿Olvidaste tu contraseña?</a>
+
+                        <!-- Recuperar contraseña1 -->
+                        <section class="recover-pass1" id="recoverPass1">
+                            <a class="back-link r-p-back-link" href="./inicio_sesion.html">
+                                <i class="fa-solid fa-angle-left"></i> <!-- Icono de "atrás" -->
+                            </a>
+                            <section class="form-recover-pass1">
+                                <h2>Recuperación de Contraseña</h2>
+                                <p class="texto1">Ingresa el correo electrónico con el que estás registrado y te enviaremos un código para verificar que eres tú</p>
+                                <input class="correo" type="email" placeholder="Correo Electrónico">
+
+                                <!-- Input para mostrar segunda interfaz de recuperacion de contraseña  -->
+                                <input class="input-recover-pass2 invisible" type="checkbox" id="mostrarRecoverPass2">
+                                <label for="mostrarRecoverPass2" id="linkRecoverPass2" class="reenviar-codigo-btn btn">Enviar código</label> 
+                                <!-- Contenido escribir codigo -->
+                                <section class="recover-pass2" id="recoverPass1">
+                                    <a class="back-link r-p-back-link" href="./inicio_sesion.html">
+                                        <i class="fa-solid fa-angle-left"></i> <!-- Icono de "atrás" -->
+                                    </a>
+                                    <section class="form-recover-pass1">
+                                        <h2>Recuperación de Contraseña</h2>
+                                        <p class="texto1">Para proteger tu cuenta ingresa el código de 6 dígitos que acabamos de enviar a tu correo</p>
+                                        <input class="codigo" type="text" placeholder="Introduce el código">
+                                        <article class="alert-container">
+                                            <i class="fa-solid fa-triangle-exclamation"></i>
+                                            <p class="alert-text">Al continuar se cerrara sesión en todos tus dispositivos</p>
+                                        </article>
+                                        <button class="continuar">
+                                            <a href="./home_entrenador.html">Continuar</a></button>
+                                        <article class="reenviar-codigo">
+                                            <p href="#">¿No recibiste el código?</p>
+                                            <a href="#">Reenviar codigo</a>
+                                        </article>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                            
                         <button class="inicio-sesion-button">
                             <a href="./home_entrenador.html">iniciar sesion</a></button>
                     </form>
