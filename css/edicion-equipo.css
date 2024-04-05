@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(204, 202, 202);
+}
+
+main{
+    display: flex;
+    color: rgb(19, 18, 18);
+}
+
+article{
+    background-color: white;
+    display: flex; 
+    width: 319px;
+    height: 862px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+a {
+    margin: 1rem;
+    width: 100%;
+    text-align: end;
+    color: black;
+}
+.fa-regular {
+    font-size: 2rem;
+}
+.logofut{
+    height: 30%;
+}
+
+.imgjugador{
+    width: 70%;
+
+}
+
+.equipo{
+    background-color: white;
+    display: flex;
+    text-align: center;
+    
+    width: 1000px;
+    height: 862px;
+    
+    
+    
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+* {
+   font-family: "Readex Pro", sans-serif;
+	font-style: normal;
+}
+.back-link {
+   margin: 1rem 0 0 1rem;
+   color: black;
+   align-self: flex-start;
+}
+.recover-pass1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: absolute;
+   top: calc(40% - 25vh);
+   left: calc(50% - 250px);
+   width: 40vw;
+   height: 55vh;
+   text-align: center;
+   background-color: white;
+   border-radius: 8px;
+}
+.back-link {
+   margin: 1rem;
+   text-align: start;
+   cursor: pointer;
+}
+.r-p-back-link {
+   margin: 2rem 0 0 2rem;
+}
+i {
+   font-size: 2rem;
+}
+.form-recover-pass1 {
+   width: 70%;
+}
+h2 {
+   margin: 0;
+   font-size: 1.5rem;
+   font-weight: 400;
+   text-align: center;
+}
+.texto1{
+   margin-top: 2rem;
+   font-weight: 300;
+   text-align: center; 
+}
+   /* Estilos de Input */
+   .correo {
+     display: inline-block;
+     padding-left: 1rem;
+     height: 2rem;
+     width: 100%;
+     font-size: 0.8rem;
+     background-color: rgb(235, 235, 235);
+     border: none;
+     border-radius: 8px;
+   }
+   /* Estilos de Botón */
+   button {
+     margin: 2rem 0 0 0;
+     padding: 0.5rem 1.5rem;
+     width: 100%;
+     color: white;
+     border: none;
+     border-radius: 8px;
+     font-weight: 600;
+     transition: 0.2s;
+     background-color: #00b4d8;
+   }

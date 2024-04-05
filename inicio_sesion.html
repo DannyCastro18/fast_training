@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio De Sesion</title>
+    <script src="https://kit.fontawesome.com/e336c2441f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/inicio_sesion.css">
+</head>
+<body>
+    <section class="container-login">
+        <section class="img-background-login">
+        </section>
+        <section class="login-section2">
+            <section id="inicioSesionForm" class="inicio-sesion-container">
+                <a class="back-link" href="./index.html"">
+                    <i class="fa-solid fa-angle-left"></i>
+                </a>
+                <section class="form-container">
+                    <form class="form-inicio-sesion">
+                        <h1 class="titulo">Inicio de Sesión</h1>
+                        
+                        <input class="input" type="email" placeholder="user@gmail.com">
+                        <br>
+                        
+                        <input id="pass" class="input" type="password" placeholder="contraseña de correo">
+        
+                        <!-- Input para mostrar seccion de recuperacion de contraseña -->
+                        <input class="input-recover-pass" type="checkbox" id="mostrarRecoverPass1">
+                        <label for="mostrarRecoverPass1" id="linkRecoverPass" class="forget-password">¿Olvidaste tu contraseña?</label>
+
+                        <!-- Recuperar contraseña1 -->
+                        <section class="recover-pass1" id="recoverPass1">
+                            <a class="back-link r-p-back-link" href="./inicio_sesion.html">
+                                <i class="fa-solid fa-angle-left"></i> <!-- Icono de "atrás" -->
+                            </a>
+                            <section class="form-recover-pass1">
+                                <h2>Recuperación de Contraseña</h2>
+                                <p class="texto1">Ingresa el correo electrónico con el que estás registrado y te enviaremos un código para verificar que eres tú</p>
+                                <input class="correo" type="email" placeholder="Correo Electrónico">
+
+                                <!-- Input para mostrar segunda interfaz de recuperacion de contraseña  -->
+                                <input class="input-recover-pass2 invisible" type="checkbox" id="mostrarRecoverPass2">
+                                <label for="mostrarRecoverPass2" id="linkRecoverPass2" class="reenviar-codigo-btn btn">Enviar código</label> 
+                                <!-- Contenido escribir codigo -->
+                                <section class="recover-pass2" id="recoverPass1">
+                                    <a class="back-link r-p-back-link" href="./inicio_sesion.html">
+                                        <i class="fa-solid fa-angle-left"></i> <!-- Icono de "atrás" -->
+                                    </a>
+                                    <section class="form-recover-pass1">
+                                        <h2>Recuperación de Contraseña</h2>
+                                        <p class="texto1">Para proteger tu cuenta ingresa el código de 6 dígitos que acabamos de enviar a tu correo</p>
+                                        <input class="codigo" type="text" placeholder="Introduce el código">
+                                        <article class="alert-container">
+                                            <i class="fa-solid fa-triangle-exclamation"></i>
+                                            <p class="alert-text">Al continuar se cerrara sesión en todos tus dispositivos</p>
+                                        </article>
+                                        <button class="continuar">
+                                            <a href="./home_entrenador.html">Continuar</a></button>
+                                        <article class="reenviar-codigo">
+                                            <p href="#">¿No recibiste el código?</p>
+                                            <a href="#">Reenviar codigo</a>
+                                        </article>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                            
+                        <button class="inicio-sesion-button">
+                            <a href="./home_entrenador.html">iniciar sesion</a></button>
+                    </form>
+                    <section class="registrarse-section">
+                        <p>¿No tienes cuenta?</p>
+                        <a href="./registro.html">Registrarse</a>
+                    </section>
+            
+                    <section class="login-platforms">
+                        <a href="#" class="login-btn google">
+                            <i class="fa-brands fa-google"></i>
+                        Iniciar sesión con Google
+                        </a>
+                        <a href="#" class="login-btn apple">
+                            <i class="fa-brands fa-apple"></i>
+                        Iniciar sesión con Apple
+                        </a>
+                        <a href="#" class="login-btn microsoft">
+                            <i class="fa-brands fa-microsoft"></i>
+                        Iniciar sesión con Microsoft
+                        </a>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

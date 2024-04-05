@@ -6,9 +6,6 @@
     <title>Fast-Training</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" async>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin async>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" async>
     <script src="https://kit.fontawesome.com/e336c2441f.js" crossorigin="anonymous"></script>
 </head>
 <body> 
@@ -18,55 +15,16 @@
             <ul>
                 <figure class="logo-container">
                     <a href="#">
-                        <img src="./img/imagotipo-fast-training.png" alt="">
+                        <img src="./img/logotipo.png" alt="">
                     </a>
                 </figure>
-            
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
             </ul>
             <ul>
-                <li>
-                    <input class="input-inicio-sesion" type="checkbox" id="mostrarLogin">
-                    <label for="mostrarLogin" id="botonLogin">Iniciar Sesión</label>
-                    <!-- Inicio de sesion -->
-                    <section id="inicio-sesion" class="inicio-sesion-container">
-                        <a class="back-link" href="../../index.html">
-                            <i class="fa-solid fa-angle-left"></i>
-                        </a>
-                        <section class="form-container">
-                            <form class="form-inicio-sesion">
-                                <h1 class="titulo">Inicio de Sesión</h1>
-                                
-                                <input class="input" type="email" placeholder="user@gmail.com">
-                                <br>
-                                
-                                <input id="pass" class="input" type="password" placeholder="contraseña de correo">
-                                <a class="forget-password">¿Olvidaste tu contraseña?</a>
-                                <button class="inicio-sesion-button">iniciar sesion</button>
-                            </form>
-                            <section class="registrarse-section">
-                                <p>¿No tienes cuenta?</p>
-                                <a href="registro.html">Registrarse</a>
-                            </section>
-                    
-                            <section class="login-platforms">
-                                <a href="#" class="login-btn google">
-                                    <i class="fa-brands fa-google"></i>
-                                Iniciar sesión con Google
-                                </a>
-                                <a href="#" class="login-btn apple">
-                                    <i class="fa-brands fa-apple"></i>
-                                Iniciar sesión con Apple
-                                </a>
-                                <a href="#" class="login-btn microsoft">
-                                    <i class="fa-brands fa-microsoft"></i>
-                                Iniciar sesión con Microsoft
-                                </a>
-                            </section>
-                        </section>
-                    </section>
-                <li><a class="link" href="">Registrate</a></li>
+                <a id="botonLogin" href="./inicio_sesion.html">Iniciar Sesion</a>
+                
+                <a id="botonRegistro" href="./registro.html">Registrate</a>
             </ul>
         </nav>
     </header>
@@ -112,7 +70,7 @@
         <section class="cta-section section">
             <article class="article-cta">
                 <h1>¡Potencia el rendimiento de tu equipo con nuestra aplicación hoy mismo! Registrate ahora para mejorar tu equipo!</h1>                    
-                <button formaction="#">Registrate</button>
+                <a href="./registro.html">Registrate</a>
             </article>
         </section>
         <!-- Contenido sobre nosotros -->
@@ -244,7 +202,7 @@
     <!-- Contenido Footer -->
     <footer class="footer">
         <figure class="footer-logo-container">
-            <img class="logo-footer" src="./img/imagotipo-fast-training.png" alt="">
+            <img class="logo-footer" src="./img/logotipo.png" alt="">
         </figure>
         <section class="social-media-section">
             <ul class="social-items-container">

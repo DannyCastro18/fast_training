@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+* {
+  font-family: "Readex Pro", sans-serif;
+	font-style: normal;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* height: 100vh;
+	width: 100%; */
+	background: rgb(173,180,255);
+	background: linear-gradient(137deg, rgb(173, 199, 255) 0%, rgba(255,198,132,1) 100%);
+}
+/*Menù lateral*/
+.padre{
+	display: grid;
+	/* grid-template-columns: repeat(2,1fr); */
+	 grid-template-areas: "container-menu-nav  container-table container-table"; 
+}
+
+.container-menu-nav{
+	/* position: fixed;
+	grid-area: conatainer-menu-nav; */
+	display: flex; 
+	width: 30%; 
+	height: 120vh; 
+	margin: 10px 0 10px 10px;
+	padding: 0 0 0 0; 
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 8px;
+}
+.navbar {
+	width: 50px;
+	height: 97%;
+	margin: auto;
+	background-color: var(--orange);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 8px;
+	background: rgb(230, 230, 230);
+}
+.navbar-up-nav {
+	display: flex;
+	flex-direction: column;
+}
+.nav-item {
+	width: 100%;
+	list-style: none;
+}
+.nav-link {
+	display: flex;
+	align-items: center;
+	height: 4rem;
+	color: var(--text-primary);
+	text-decoration: none;
+}
+ .link-text { /*mostrar texto al lado de los iconos */
+	display: none;
+	margin-left: 1rem;
+}
+.nav-link i{
+	margin: 0 auto;
+	font-size: 1.2rem;
+	color: rgb(16, 33, 37);
+}
+/* estilos para la tabla */
+.container2{
+	/* display: grid; */
+	/* grid-template-columns: repeat(2,1fr); */
+	/* background-color: white; */
+	margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: white;
+}
+.card1{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+}
+.card1 img{
+	width: 440px;
+	height: 650px;
+
+}
+.card2{
+	/* display: grid; */
+	/* grid-template-columns: repeat(1,1fr); */
+	grid-template-areas: "hijo1",
+	"hijo2";
+	grid-gap: 5px;
+	height: auto;
+	margin-top: 20px;
+}
+
+.hijo1{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	height: 40px;
+	margin-top: 20px;
+}
+h1{
+	font-size: 25px;
+}
+.icon{
+	display: flex;
+	justify-content: right;
+	margin-left: 50px;
+	font-size: 25px;
+	
+}
+.hijo2{
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+	grid-gap: 20px;
+	
+}
+.suple{
+	background-color: rgb(197, 197, 197);
+	padding-left: 20px;
+	border-radius: 1px;
+	height: 2rem;
+    align-items: center;
+    display: flex;
+}
+
+
