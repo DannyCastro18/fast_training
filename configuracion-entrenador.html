@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" href="./css/home_entrenador.css">
+	<link rel="stylesheet" href="./css/configuracion-entrenador.css">
 	<script src="https://kit.fontawesome.com/e336c2441f.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -35,7 +35,7 @@
 				</li>
 	
 				<li class="nav-item">
-					<a href="./datos-equipo.html" class="nav-link">
+					<a href="#" class="nav-link">
 						<i class="fa-solid fa-users"></i>
 						<span class="link-text">Equipo</span>
 					</a>
@@ -165,12 +165,6 @@
 						
 					</section>
 				</li>
-				<li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fa-solid fa-circle-plus"></i>
-                        <span class="link-text">Añadir equipo</span>
-                    </a>
-                </li>
 			</ul>
 			<ul class="navbar-down-nav">
 				<li class="nav-item">
@@ -189,92 +183,100 @@
 		</nav>
 	</aside>
 	<main class="main">
-		<section class="main-container">
-			<section class="main-content-container">
-				<article class="team-stadistics">
-					<h1>Estado de tu Equipo</h1>
-					<img src="./img/general-stadistics.png" alt="">
-					<img src="./img/general-stadistics.png" alt="">
+		<article class="article2">
+			<header class="header-cuenta">
+				<h5>Mi cuenta</h5>
+			</header>
+			<main class="perfil">
+				<article class="Fotos">
+					<label for="text">Foto de perfil</label>
+					<section class="user">
+						<i class="fa-solid fa-user-tie"></i>
+					</section>
 				</article>
-				<input id="crearEquipoBoton" type="checkbox">
-				</input>
-				<label class="boton-crear-equipo" for="crearEquipoBoton">
-					<i class="fa-solid fa-plus"></i>
-				</label>
-			</section>
-	
-			<!-- seccion de publicaciones -->
-			<aside class="post-container">
-				<section class="post create-post-section">
-					<span class="user-icon-container">
-						<i class="fa-solid fa-user"></i>
-					</span>
-					<a href="#">
-						<i class="fa-solid fa-camera"></i>
-					</a>
-					<form class="post-create-container" action="">
-						<input type="text" placeholder="Escribe algo...">
-					</form>
+				<section>
+					<label for="text">Nombre</label>
+					<aside>
+						<article class="nombre-editar">
+							<p>Raul Anastacio Arboleda</p><i class="fa-solid fa-pencil"></i>
+						</article>
+					</aside>
+
+					<label for="text">Correo electronico</label> 
+					<aside>
+						<article class="correo-editar">
+							<p>Rau1g0m3@gmail.com</p><i class="fa-solid fa-pencil"></i>
+						</article>
+					</aside>
+
+					<label for="text">Rol</label>
+					<aside>
+						<i class="fa-solid fa-user-gear"></i>
+						<article class="Rol">
+							<p>Administrador</p>
+						</article>
+					</aside>
 				</section>
-				<article class="post">
-					<section class="head-post">
-						<section>
-							<span class="user-icon-container">
-								<i class="fa-solid fa-user"></i>
-							</span>
-							<h3>Juan Cisneros</h3>
-						</section>
-						<p class="time-post">1:17 PM</p>
+			</main>
+			<div class="linea"></div>
+			<section class="lenguaje">
+				<h3>Idioma</h3>
+				<button class="idiom">Español</button>
+				<button class="idiom">Ingles</button>
+			</section>
+			<div class="linea"></div>
+			<section class="tema">
+				<h2>Tema</h2>
+				<header class="header-tema">
+					Personaliza la apariencia de aplicacion deportiva
+				</header>
+				<div>
+					<section class="color">
+						<img src="./img/tema1.png" alt="">
+						<input type="checkbox">
 					</section>
-					<p>Ya acabamos el entrenamiento, ahora a chismosiar jejjejje</p>
-					<p>@Manuel_Daza @LeoR_Lopez</p>
-					<figure class="media-post-container">
-						<img src="https://img.freepik.com/foto-gratis/hombres-juegan-socer-parque-torneo-mini-futbol-chico-trajes-deportivos-negros_1157-43532.jpg?t=st=1711156348~exp=1711159948~hmac=9450b1c0123c919536941028718ed4bc35c808338a3b97d3cdaf3c9616bd031d&w=740" alt="">
-					</figure>
-					<a class="like-button" href="#">
-						<i class="fa-solid fa-thumbs-up"></i>
-					</a>
-				</article>
-				<article class="post">
-					<section class="head-post">
-						<section>
-							<span class="user-icon-container">
-								<i class="fa-solid fa-user"></i>
-							</span>
-							<h3>Andrés Escobar</h3>
-						</section>
-						<p class="time-post">Hace 2 días</p>
+					<section class="color">
+						<img src="./img/tema2.png" alt="">
+						<input type="checkbox">
 					</section>
-					<p>El abuelo de Camilo estaba super emocionado. 🥹</p>
-					<p>@Camilo_Suarez</p>
-					<figure class="media-post-container">
-						<img src="https://img.freepik.com/foto-gratis/diferentes-personas-mirando-equipo-futbol_23-2149015532.jpg?t=st=1711158910~exp=1711162510~hmac=f40ec19c58d5cb5e2ae66aae4a39f13ba60d0fbfd2dd0372e4a853c4d18bfe36&w=740" alt="">
-					</figure>
-					<a class="like-button" href="#">
-						<i class="fa-solid fa-thumbs-up"></i>
-					</a>
+				</div>
+			</section>
+			<div class="linea"></div>
+			<section class="seguridad">
+				<h2>Seguridad</h2>
+				<article class="header_seguridad">
+					<p>Al cambiar la contraseña, se cerrara sesión en todos los dispositivos</p>
 				</article>
-				<article class="post">
-					<section class="head-post">
-						<section>
-							<span class="user-icon-container">
-								<i class="fa-solid fa-user"></i>
-							</span>
-							<h3>Juan Cisneros</h3>
-						</section>
-						<p class="time-post">1:17 PM</p>
-					</section>
-					<p>Ya acabamos el entrenamiento, ahora a chismosiar jejjejje</p>
-					<p>@Manuel_Daza @LeoR_Lopez</p>
-					<figure class="media-post-container">
-						<img src="https://img.freepik.com/foto-gratis/hombres-juegan-socer-parque-torneo-mini-futbol-chico-trajes-deportivos-negros_1157-43532.jpg?t=st=1711156348~exp=1711159948~hmac=9450b1c0123c919536941028718ed4bc35c808338a3b97d3cdaf3c9616bd031d&w=740" alt="">
-					</figure>
-					<a class="like-button" href="#">
-						<i class="fa-solid fa-thumbs-up"></i>
-					</a>
-				</article>
-			</aside>
-		</section>
+				<aside class="seson">
+					<button>
+						Cambiar contraseña
+					</button>
+					<button>
+						Cerrar sesión en todos los dispositivos
+					</button>
+				</aside>
+			</section>
+			<div class="linea"></div>
+			<section class="descargas">
+				<h2>Descargas</h2>
+				<p>Permitir uso de datos moviles para las descargas</p>
+				<p>Solo wifi</p>
+			</section>
+			<div class="linea"></div>
+			<section class="eliminar-cuenta">
+				<h5>
+					Eliminar cuenta <br>
+				</h5>
+				<p>
+					Se eliminara tu cuenta no podras tener acceso a ningun tipo de informacion <br> que
+					proporcione su entrenador con la aplicacion deportiva.
+				</p>
+				<button>
+					Eliminar cuenta
+				</button>
+			</section>
+
+		</article>
 	</main>
 </body>
 </html> 

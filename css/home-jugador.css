@@ -66,7 +66,6 @@ body {
 	padding: 0 0 0 0;
 	background-color: rgba(255, 255, 255, 0.4);
 	border-radius: 8px;
-	z-index: 1;
 }
 .navbar {
 	width: 80%;
@@ -123,14 +122,12 @@ body {
 	left: 5rem;
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    width: 30vw;
-    height: 90vh;
+    width: 500px;
+    height: 100vh;
     background-color: white; 
     padding: 10px; 
     font-size: 1rem;
-	border-radius: 8px;
-	z-index: 1;
-	overflow-y: scroll;
+	z-index: 5;
 }
 .icon3 a{
     margin:8px;
@@ -145,7 +142,6 @@ body {
     font-size: 30px;
 }
 .content{
-	height: 4rem;
     display: grid;
     grid-template-areas: "card1 card2 card3";
     grid-gap: 20px;
@@ -203,16 +199,13 @@ a{
 
 
 /* Seccion principal */
+
 .main {
-	position: fixed;	
-	width: 100%;
-	height: 100%;
-	padding: 6rem 0 0 6rem;
-	z-index: 0;
-}
-.main-container {
-	width: 98%;
-	height: 95%;
+	position: fixed;
+	width: 94%;
+	height: 86%;
+	margin: 6rem 5rem;
+	padding: 1rem;
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	gap: 20px;
@@ -241,21 +234,18 @@ a{
 	width: 30%;
 }
 .boton-crear-equipo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	height: 3rem;
 	width: 3rem;
+	border: none;
 	border-radius: 50%;
 	background-color: white;
 	border: 1px solid #00b4d8;
 }
-#crearEquipoBoton {
-	opacity: 0;
-}
-.boton-crear-equipo  i {
-	font-size: 2rem;
+.boton-crear-equipo a {
 	color: #00b4d8;
+}
+.boton-crear-equipo a i {
+	font-size: 1.8rem;
 }
 
 /* Seccion de publicaciones */
@@ -271,15 +261,11 @@ a{
 .create-post-section {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-}
-.create-post-section a {
-	color: black;
 }
 .post-create-container {
 	display: flex;
 	align-items: center;
-	width: 75%;
+	width: 85%;
 	background-color: rgb(231, 231, 231);
 	border-radius: 8px;
 }
@@ -288,8 +274,7 @@ a{
 }
 .post-create-container input {
 	height: 2rem;
-	width: 100%;
-	padding-left: 0.5rem;
+	width: 85%;
 	border: none;
 	background-color: rgba(255, 255, 255, 0);
 }
