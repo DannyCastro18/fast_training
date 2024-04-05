@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	width: 100%;
+	background: rgb(173,180,255);
+	background: linear-gradient(137deg, rgba(173,180,255,1) 0%, rgba(255,198,132,1) 100%);
+}
+
+
+main {
+	padding: 5rem 0 0 5rem;
+}
+.contenedor-estadistica {
+	height: 98vh;
+	width: 90vw;
+	padding: 2rem;
+	background-color: white;
+}
+.contenedor-estadistica2 {
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+.estadisticas-circulo-contenedor {
+	width: 50%;
+}
+
+.p1 {
+	text-align: center;
+    padding-top: 25px;
+}
+.circulo1 {
+    position: relative;
+    margin-left: 250px;
+    margin-top: 130px;
+    margin-right: 365px;
+	
+}
+circle {
+    fill: none;
+    stroke: blue;
+    stroke-width: 20px;
+    stroke-dasharray: var(--porcentaje) 100;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+    stroke-dasharray: 100 100;
+    stroke: gray;
+    
+}
+circle:nth-child(2) {
+    stroke: rgb(35, 205, 228);
+    stroke-dasharray: var(--porcentaje) 100;
+}
+.circulo2 {
+    position: relative;
+    margin-left: 250px;
+    margin-top: 130px;
+    margin-right: 365px;
+	
+   
+}
+.circulo1 span {
+	color: rgb(27, 107, 117);
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	bottom: 0%;
+	right: 0%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font: 25px/1em Verdana;
+	margin-left: 75px;
+ 
+	
+    
+}
+.circulo2 span {
+    color:   rgb(27, 107, 117);
+  	position: absolute;
+	top: 0%;
+	left: 0%;
+	bottom: 0%;
+	right: 0%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font: 25px/1em Verdana;
+	margin-left: 75px;
+	
+	
+    
+}
+.img{
+	padding-top: 20px;
+	align-content: center;
+}
+.div1{
+	display: flex;
+}
+.h1{
+	align-items: center;
+	margin-left: 500px;
+	margin-top: 20px;
+}
+
