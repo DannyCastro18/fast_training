@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="./css/jugador-archivos.css">
+	<script src="https://kit.fontawesome.com/e336c2441f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header y barra de búsqueda -->
+	<header class="header">
+		<section class="header-left">
+			<nav class="logo">
+				<a href="./jugador-home.html"><img src="./img/logotipo.png" alt="logo"></a>
+			</nav>
+		</section>
+		<section class="search-container">
+			<form class="barra-busqueda" action="#">
+				<input class="busqueda" type="text" name="busqueda" placeholder="Buscar en...">
+				<button class="busqueda-lupita" type="submit">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</form>
+		</section> 
+	</header>
+<!-- Barra lateral-->
+<aside class="container-menu-nav">
+	<nav class="navbar">
+		<ul class="navbar-up-nav">
+			<li class="nav-item">
+				<a href="./jugador-home.html" class="nav-link">
+					<i class="fa-solid fa-house"></i>
+					<span class="link-text">Home</span>
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="./jugador-datos-equipo.html" class="nav-link">
+					<i class="fa-solid fa-users"></i>
+					<span class="link-text">Equipo</span>
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="./jugador-archivos.html" class="nav-link">
+					<i class="fa-solid fa-folder"></i>
+					<span class="link-text">Archivos</span>
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="./jugador-config.html" class="nav-link">
+					<i class="fa-solid fa-gear"></i>
+					<span class="link-text">Configuración</span>
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<input class="input-noticacion-entrenador" type="checkbox" id="mostrarNotificacionEntrenador">
+				<label for="mostrarNotificacionEntrenador" id="notificacionEntrenador" class="notificacion-button nav-link">
+					<i class="fa-solid fa-bell"></i>
+					<span class="link-text">Notificaciones</span>
+				</label>
+
+				<!-- Contenido de notificaciones -->
+				<section class="section-notificaciones">
+					<article class="card0">
+						<h1 class="title">Notificaciones</h1>
+						<article class="icon3">
+							<a href="#" id="figure">
+								<i class="fa-solid fa-list"></i>
+							</a>
+							<a href="#" id="figure">
+								<i class="fa-solid fa-trash"></i>
+							</a>
+							<a href="#" id="figure">
+								<i class="fa-solid fa-circle-xmark"></i>
+							</a>
+						</article>
+					   
+					</article>
+				
+					<article class="content">
+						<article class="card1"> 
+							<i class="fa-solid fa-envelope"></i>
+						</article>
+						
+						<article class="card2">
+							<h3>Email</h3>
+							<p>Tienes un nuevo mensaje de Fast Training.
+							</p>
+						</article>
+						<article class="card3">           
+							2:57 PM
+						</article>
+					</article>
+			
+					<article class="content">
+						<article class="card1">
+							<i class="fa-solid fa-thumbs-up"></i>
+						</article>
+						<article class="card2" >
+							<h3>Me gusta</h3>
+							<p>A Leo R. López y a 3 personas más les gustó tu foto.</p>
+						</article>
+						<article class="card3">           
+							10:57 AM
+						</article>
+					</article>
+			
+					<article class="content">
+						<article class="card1">
+							<i class="fa-solid fa-message"></i>
+						</article>
+					   <article class="card2">
+							<h3>Preguntas, quejas, reclamos o sugerencias</h3>
+							<p>El administrador a dado respuesta a tu pregunta.</p>
+					   </article>
+						<article class="card3">           
+							08/01/2024
+						</article>
+					</article>
+			
+					<article class="content">
+						<article class="card1">
+							<i class="fa-solid fa-message"></i>
+						</article>
+						<article class="card2">
+							<h3>Preguntas, quejas, reclamos o sugerencias</h3>
+							<p>El administrador a dado respuesta a tu queja. </p>
+						</article>
+						<article class="card3">           
+							06/01/2024
+						</article>
+					</article>
+			
+					<article class="content">
+						<article class="card1">
+							<i class="fa-solid fa-envelope"></i>
+						</article>
+						<article class="card2">
+							<h3>Email</h3>
+							<p>Tienes un nuevo mensaje de Fast Training. </p>
+						</article>
+						<article class="card3">           
+							27/12/2023
+						</article>
+					</article>
+			
+					<article class="content">
+						<article class="card1">
+							<i class="fa-solid fa-chart-simple"></i>
+						</article>
+						<article class="card2"> 
+							<h3>Estadísticas</h3>
+							<p>El resultado de tu mesociclo del mes de noviembre esta listo, tus estadísticas de rendimiento ya están disponibles. </p>
+						</article>
+						<article class="card3">           
+							06/12/2023
+						</article>
+					</article>
+					<article class="content">
+						<article class="card1">
+							<i class="fa-solid fa-calendar-days"></i>
+						</article>
+						<article class="card2"> 
+							<h3>Mesociclo público</h3>
+							<p>Tu entrenador ya ha publicado tu  mesociclo.</p>
+						</article>
+						<article class="card3">           
+							06/12/2023
+						</article>
+					</article>
+				</section>
+			</li>
+		</ul>
+		<ul class="navbar-down-nav">
+			<li class="nav-item">
+				<a href="./jugador-pqr.html" class="nav-link selected">
+					<i class="fa-regular fa-circle-question"></i>
+					<span class="link-text">Ayuda</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="../../index.html" class="nav-link">
+					<i class="fa-solid fa-right-from-bracket"></i>
+					<span class="link-text">Cerrar sesión</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</aside>
+	<main class="main">
+		<section class="main-container">
+			<section class="main-content-container">
+				<article class="team-stadistics">
+					<h1>Estado de tu Equipo</h1>
+					<img src="./img/general-stadistics.png" alt="">
+					<img src="./img/general-stadistics.png" alt="">
+				</article>
+			</section>
+		</section>
+	</main>
+</body>
+</html> 

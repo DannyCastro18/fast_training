@@ -113,10 +113,10 @@ body {
 .section-notificaciones {
 	display: none;
 }
-.input-noticacion-entrenador {
+.input-noticacion-jugador {
 	display: none;
 }
-#mostrarNotificacionEntrenador:checked ~ .section-notificaciones{
+#mostrarNotificacionJugador:checked ~ .section-notificaciones{
 	position: absolute;
 	top: 0;
 	left: 5rem;
@@ -127,17 +127,11 @@ body {
     background-color: white; 
     padding: 10px; 
     font-size: 1rem;
-	z-index: 5;
-}
+	z-index: 1;
+
 .icon3 a{
     margin:8px;
 }
-/* .titulo{
-    display: grid;
-    grid-template-areas: "card1 card2 card3";
-    grid-gap: 50px;
-    margin: 10px;
-} */
 .title{
     font-size: 30px;
 }
@@ -183,7 +177,6 @@ a{
 .card2 p{
     margin-right:5px;
 }
-
 .card3{
     display: flex;
     justify-content: center;
@@ -191,12 +184,11 @@ a{
     align-items: center;
     margin: 10px;
 }
-
 .content:hover{
     background-color: #c5c5c5;
     cursor: pointer;
 }
-
+}
 
 /* Seccion principal */
 
@@ -209,6 +201,7 @@ a{
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	gap: 20px;
+	z-index: 0;
 }
 .main-content-container {
 	height: auto;
@@ -217,37 +210,6 @@ a{
 	align-items: end;
 	justify-content: space-between;
 }
-.team-stadistics {
-	height: 70%;
-	padding: 2rem;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	background-color: rgb(255, 255, 255);
-	border-radius: 8px;
-}
-.team-stadistics h1 {
-	width: 100%;
-	text-align: center;
-}
-.team-stadistics img {
-	width: 30%;
-}
-.boton-crear-equipo {
-	height: 3rem;
-	width: 3rem;
-	border: none;
-	border-radius: 50%;
-	background-color: white;
-	border: 1px solid #00b4d8;
-}
-.boton-crear-equipo a {
-	color: #00b4d8;
-}
-.boton-crear-equipo a i {
-	font-size: 1.8rem;
-}
-
 /* Seccion de publicaciones */
 .post-container {
 	display: flex;
@@ -257,78 +219,4 @@ a{
 	border-radius: 8px;
 	max-width: 100%;
 	overflow-y: auto;
-}
-.create-post-section {
-	display: flex;
-	justify-content: space-between;
-}
-.post-create-container {
-	display: flex;
-	align-items: center;
-	width: 85%;
-	background-color: rgb(231, 231, 231);
-	border-radius: 8px;
-}
-.post-create-container i {
-	margin: 0 auto;
-}
-.post-create-container input {
-	height: 2rem;
-	width: 85%;
-	border: none;
-	background-color: rgba(255, 255, 255, 0);
-}
-.post {
-	width: 90%;
-	margin: 10px;
-	padding: 10px 0;
-	border-bottom: solid 1px rgb(214, 214, 214);
-}
-.head-post {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	font-weight: 200;
-}
-.head-post section{
-	display: flex;
-	width: auto;
-	align-items: center;
-}
-.user-icon-container {
-	width: 2rem;
-	height: 2rem;
-	border: solid 2px black;
-	border-radius: 50%;
-	text-align: center;
-	padding-top: 3px;
-}
-.head-post section h3 {
-	margin-left: 5px;
-	font-weight: 300;
-}
-.head-post .time-post {
-	font-size: 0.7rem;
-}
-.post p {
-	margin-top: 5px;
-	font-size: 0.9rem;
-	font-weight: 200;
-}
-.media-post-container {
-	margin-top: 5px;
-	width: 100%;
-}
-.media-post-container img{
-	width: 100%;
-	border-radius: 8px;
-}
-.like-button {
-	margin-left: 10px;
-	color: black;
-}
-.like-button {
-	font-size: 1.5rem;
-
 }
