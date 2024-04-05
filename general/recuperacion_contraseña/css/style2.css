@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    
+    
+ }
+ 
+ .pagina {
+    width: 300px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 60px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+ }
+ 
+.header {
+   display: flex;
+   justify-content: space-between;
+}
+
+.icono {
+   cursor: pointer;
+}
+
+ h2 {
+    color: #333;
+    text-align: center;
+ }
+ .texto1{
+    text-align: center;
+    margin:10%;
+ }
+ 
+ /* Estilos de Input */
+ input[type=email], input[type=text] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+ }
+ 
+ /* Estilos de Botón */
+ button {
+    background-color: #ff5733;
+    color: white;
+    border:none;
+    padding:10px 120px;
+    margin: 0px 5px 12px 7px; 
+ }
+ .codigo{
+    text-align: center;
+ }
