@@ -54,8 +54,9 @@
 						<span class="link-text">Configuración</span>
 					</a>
 				</li>
-	
+				
 				<li class="nav-item">
+					<!-- Input para mostrar la interfaz de notificaciones -->
 					<input class="input-noticacion-entrenador" type="checkbox" id="mostrarNotificacionEntrenador">
 					<label for="mostrarNotificacionEntrenador" id="notificacionEntrenador" class="notificacion-button nav-link">
 						<i class="fa-solid fa-bell"></i>
@@ -165,11 +166,44 @@
 						
 					</section>
 				</li>
+
 				<li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fa-solid fa-circle-plus"></i>
-                        <span class="link-text">Añadir equipo</span>
-                    </a>
+					<!-- Input para mostrar la interfaz para crear equipo -->
+					<input id="crearEquipoBoton" type="checkbox">
+					</input>
+					<label class="boton-crear-equipo nav-link" for="crearEquipoBoton">
+						<i class="fa-solid fa-circle-plus"></i>
+                        <span class="link-text">Crear equipo</span>
+					</label>
+
+					<!-- Contenido de interfaz para crear equipo -->
+					<section class="creacion-equipo-container">
+						<article class="form-container">
+							<section class="header-form">
+								<a href="./home_entrenador.html">
+									<i class="fa-solid fa-angle-left "></i>
+								</a>
+								<h1>
+									Creación de equipo
+								</h1>
+							</section>
+							<form class="creacion-equipo-form" action="">
+								<label for="">Añade el escudo de tu equipo (opcional)</label>
+								<div class="escudo-container">
+									<i class="fa-solid fa-pen-to-square"></i>
+									<input type="file">
+								</div>
+								<label for="">Escribe el nombre de tu equipo</label><br>
+								<input type="text" placeholder="Nombre de tu equipo"><br>
+								<label for="">Añadir una descripcion (opcional)</label><br>
+								<input type="text" placeholder="Descripción"><br>
+								<label for="">Invita a los miembros de tu equipo</label><br>
+								<button class="btn-link btn">Generar link de invitación</button><br>
+								<button class="btn-crear-equipo btn">Crear equipo</button>
+							</form>
+						</article>
+					</section>
+
                 </li>
 			</ul>
 			<ul class="navbar-down-nav">
@@ -196,11 +230,6 @@
 					<img src="./img/general-stadistics.png" alt="">
 					<img src="./img/general-stadistics.png" alt="">
 				</article>
-				<input id="crearEquipoBoton" type="checkbox">
-				</input>
-				<label class="boton-crear-equipo" for="crearEquipoBoton">
-					<i class="fa-solid fa-plus"></i>
-				</label>
 			</section>
 	
 			<!-- seccion de publicaciones -->

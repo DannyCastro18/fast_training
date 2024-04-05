@@ -20,9 +20,8 @@ body {
 	width: 100%;
 	background: rgb(173, 180, 255);
 	background: linear-gradient(137deg, rgba(173, 180, 255, 1) 0%, rgba(255, 198, 132, 1) 100%);
-	background-size: cover; 
-    background-attachment: fixed;
-	text-decoration: none;
+    background-size: cover; 
+    background-attachment: fixed; /*para que el fondo no se corte */
 
 }
 
@@ -143,9 +142,12 @@ body {
 	gap: 1rem;
 	margin-top: 0.5rem;
 }
+.iconjugador img{
+    width: 30px;
+}
 .main {
 	padding-left: 6rem;
-	height: 260vh;
+    height: 260vh;
 }
 
 .article2 {
